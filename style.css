@@ -1,0 +1,125 @@
+:root {
+    --yellow:hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --blue:hsl(179, 100%, 13%);
+  }
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div{
+    width: 100%;
+    
+}
+h1{
+    font-variant: small-caps;
+    color:rgb(236, 235, 235);
+    padding: 1em 0.5em ;
+}
+
+p{
+    padding: 1em 0.5em ;
+    color:rgb(231, 222, 222);
+    font-size:20px;
+}
+
+img{
+    padding: 2em ;
+}
+span{
+    display: block;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.button{
+    width: 50%;
+    font-size: 1.5em;
+    padding: 0.5em ;
+    background-color: white;
+    box-shadow: 10px 5px 9px rgba(46, 45, 45, 0.5);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 100ms ease-in-out;
+    opacity: 0.8;    
+}
+
+.button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container{ 
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.box{
+    width: calc(100% / 3);
+}
+
+
+.one{
+    background-color:rgb(196, 127, 36);
+}
+.one .button {
+    color:var(--yellow);
+}
+
+.two{
+    background-color:rgb(31, 116, 138);
+}
+.two .button {
+    color:var(--cyan);
+}
+.three{
+    background-color:rgb(31, 78, 63);
+}
+.three .button {
+    color:var(--blue);
+}
+
+.container div:first-child {
+    border-radius: 3% 0 0 3%;
+}
+.container div:last-child {
+    border-radius: 0 3%  3% 0;
+}
+
+@media only screen and (max-width: 1234px) 
+ {
+ .container{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .box{
+        width:80%;
+        height:auto;
+}
+.container div:first-child {
+    border-radius: 3%  3% 0 0;
+    -webkit-border-radius: 3%  3% 0 0;
+    -moz-border-radius: 3%  3% 0 0;
+    -ms-border-radius: 3%  3% 0 0;
+    -o-border-radius: 3%  3% 0 0;
+}
+.container div:last-child {
+    border-radius: 0 0 3%  3%;
+    -webkit-border-radius: 0 0 3%  3%;
+    -moz-border-radius: 0 0 3%  3%;
+    -ms-border-radius: 0 0 3%  3%;
+    -o-border-radius: 0 0 3%  3%;
+}
+  }
